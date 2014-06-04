@@ -9,8 +9,10 @@ calculator program yourself in this file.
 def main():
     while True:
         input = raw_input()
+        split_string = input.split()
 
-        print input + "hello"
+        if split_string[0] == 'q':
+            break
 
 if __name__ == '__main__':
     main()
