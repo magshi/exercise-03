@@ -1,9 +1,4 @@
-"""
-calculator.py
-
-Using our arithmetic.py file from Exercise02, create the
-calculator program yourself in this file.
-"""
+import arithmetic
 
 
 def main():
@@ -16,21 +11,45 @@ def main():
 
         else:
             if split_string[0] == '+':
-                return "Someday I will know how to add!"
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.add (num1, num2)
+
             elif split_string[0] == '-':
-                return "Someday I will know how to subtract!"
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.subtract (num1, num2)
+
             elif split_string[0] == '*':
-                return "Someday I will know how to multiply!"
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.multiply (num1, num2)
+
             elif split_string[0] == '/':
-                return "Someday I will know how to divide!"
-            elif split_string[0] == 's':
-                return "Someday I will know how to square!"
-            elif split_string[0] == 'c':
-                return "Someday I will know how to cube!"
-            elif split_string[0] == 'p':
-                return "Someday I will know how to do powers!"
-            elif split_string[0] == 'm':
-                return "Someday I will know how to do modulus!"
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.divide (num1, num2)
+
+            elif split_string[0] == 'square':
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.square (num1, num2)
+
+            elif split_string[0] == 'cube':
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.cube (num1, num2)
+
+            elif split_string[0] == 'pow':
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.power (num1, num2)
+
+            elif split_string[0] == 'mod':
+                num1 = int(split_string[1])
+                num2 = int(split_string[2])
+                print arithmetic.mod (num1, num2)
+
             else:
                 print "I don't understand." 
 
